@@ -3,20 +3,9 @@ This repository contains a C implementation of a widely used file compression te
 
 Given an input text file (containing any character in the ASCII table), this program generates three output files titled 'sorted', 'huffman', and 'header'.
 
-### sorted
-Contains all characters that appear in the input file with their respective frequency. Characters are sorted in ascending order by frequency. If two characters have equivalent frequencies, the character with the smaller ASCII value appears first.
-
-### huffman
-Contains characters and stream of 0 and 1 corresponding to the Huffman code of the character.
-
-### header
-Contains the header information. This is the representation of the encoding binary tree using pre-order traversal.
-
-
-## Example:
 Assuming the input text file contains the string "go go gophers"
 
-`sorted`
+`sorted` Contains all characters that appear in the input file with their respective frequency. Characters are sorted in ascending order by frequency. If two characters have equivalent frequencies, the character with the smaller ASCII value appears first.
 ```
 
 :1
@@ -30,7 +19,7 @@ g:3
 o:3
 ```
 
-`huffman`
+`huffman` Contains characters and stream of 0 and 1 corresponding to the Huffman code of the character.
 ```
 g:00
 o:01
@@ -44,7 +33,7 @@ r:1110
 s:1111
 ```
 
-`header`
+`header`Contains the header information. This is the representation of the encoding binary tree using pre-order traversal.
 ```
 ,��@�YKE�r��
 ```
